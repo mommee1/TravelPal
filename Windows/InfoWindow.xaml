@@ -1,0 +1,63 @@
+﻿<Window x:Class="TravelPal.Windows.InfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TravelPal.Windows"
+        mc:Ignorable="d"
+        Title="Info Window" Height="400" Width="700" Background="MediumSlateBlue" Margin="5">
+
+
+
+
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+
+        <Label
+            Name="lblRegisterUserName"
+            Grid.Column="0"
+            Grid.Row="1"
+            Grid.ColumnSpan="3"
+            Content="Info about this app"
+            FontSize="25"
+            HorizontalAlignment="Center"
+            Foreground="MintCream"/>
+        <TextBlock
+            HorizontalAlignment="Center"
+            Margin="0,30,0,0"
+            TextWrapping="Wrap"
+            FontSize="15"
+            Height="200"
+            Foreground="MintCream">
+            Hello and welcome to this new app! You can add different travel locations to enjoy some of the best trips around the world!
+        </TextBlock>
+
+        <Button
+            Name="btnBack"
+            Margin="10"
+            Grid.Column="5"
+            Grid.Row="4"
+            Height="35"
+            Width="150" 
+            Content="Back"
+            FontSize="20"
+            Foreground="MediumSlateBlue"
+            Click="btnBack_Click"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            />
+
+
+    </StackPanel>
+</Window>

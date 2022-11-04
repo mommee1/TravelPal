@@ -1,0 +1,101 @@
+﻿<Window x:Class="TravelPal.TravelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TravelPal"
+        mc:Ignorable="d"
+        Title="TravelWindow" Height="450" Width="800">
+    <Grid Margin="20" Background="MediumSlateBlue" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label
+            x:Name="lblUsername"
+            Content="Username"
+            FontFamily="Ariel"
+            VerticalAlignment="Center"
+            Foreground="White"
+            FontSize="20"
+            Margin="10"
+            />
+        <Label
+            Grid.Row="1"
+            Content="Overview"
+            FontFamily="Ariel"
+            VerticalAlignment="Center"
+            Foreground="White"
+            FontSize="20"
+            Margin="0,30,0,0"
+            />
+        <Button
+            x:Name="btnUserDetailsWindow"
+            Grid.Column="1"
+            Margin="15"
+            Content="User Details"
+            Background="MintCream" Click="btnUserDetailsWindow_Click_" 
+            />
+        <Button
+            x:Name="btnAddTravel"
+            Grid.Column="1"
+            Grid.Row="1"
+            Margin="10,30,10,6"           
+            Content="Add Travel"
+            Background="MintCream" Click="btnAddTravel_Click"
+            />
+        <Button
+            x:Name="btnDetails"
+            Grid.Column="2"
+            Grid.Row="2"
+            Margin="15"
+            Content="Details"
+            Background="MintCream" Click="btnDetails_Click" 
+            />
+        <Button
+            x:Name="btnRemove"
+            Grid.Column="3"
+            Grid.Row="2"
+            Margin="15"
+            Content="Remove"
+            Background="MintCream" Click="btnRemove_Click"
+            />
+        <Button
+            x:Name="btnAsk"
+            Grid.Column="5"
+            Margin="50,20,50,20"
+            Content="?"
+            Background="MintCream" Click="btnAsk_Click"
+            />
+        <Button
+            x:Name="btnSignOut"
+            Grid.Column="5"
+            Grid.Row="5"
+            Margin="10,30,10,6"           
+            Content="Sign out"
+            Background="MintCream" Click="btnSignOut_Click"
+            />
+        <ListView  
+            x:Name="listviewTravel"
+            Grid.Row="2"
+            Height="200"
+            Grid.RowSpan="3"
+            VerticalContentAlignment="Center" 
+            Grid.ColumnSpan="2"
+            Background="MintCream"
+            Margin="10,0,10,0"
+            />
+    </Grid>
+</Window>
